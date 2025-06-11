@@ -1,0 +1,28 @@
+### Signup
+POST http://localhost:3000/api/v1/signup
+Content-Type: application/json
+
+{
+  "username": "testuser1",
+  "password": "testpass1",
+  "email": "test1@example.com"
+}
+
+### Signin
+POST http://localhost:3000/api/v1/signin
+Content-Type: application/json
+
+{
+  "username": "testuser1",
+  "password": "testpass1"
+}
+
+### Send Transaction
+POST http://localhost:3000/api/v1/txn/sign
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDZmZTNhNjEzODdhZTk3N2Q4OWJjYyIsImlhdCI6MTc0OTQ4MzA3Nn0.3HhnhvPdGohQEJL339gRTzga1wHqFHduPDQDL6d9Idg
+
+{
+  "toAddress": "HoomsS5YfyNP2icfW44zh84VqT8v6AWHS8amurMJBXcE",
+  "amount": 0.01
+}
