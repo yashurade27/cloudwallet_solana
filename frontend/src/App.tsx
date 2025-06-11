@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import { Toaster } from "sonner"
 
 function App() {
-  const [walletAddress, setWalletAddress] = useState<string | null>(null);
+  const [, setWalletAddress] = useState<string | null>(null);
 
   useEffect(() => {
     const publicKey = localStorage.getItem("publicKey");

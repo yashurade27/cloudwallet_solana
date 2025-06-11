@@ -1,15 +1,15 @@
 ### Signup
-POST http://localhost:3000/api/v1/signup
+POST https://cloudwallet-solana.onrender.com/api/v1/signup
 Content-Type: application/json
 
 {
-  "username": "testuser1",
-  "password": "testpass1",
-  "email": "test1@example.com"
+  "username": "testuser11",
+  "password": "testpass11",
+  "email": "test11@example.com"
 }
 
 ### Signin
-POST http://localhost:3000/api/v1/signin
+POST https://cloudwallet-solana.onrender.com/api/v1/signin
 Content-Type: application/json
 
 {
@@ -18,9 +18,9 @@ Content-Type: application/json
 }
 
 ### Send Transaction
-POST http://localhost:3000/api/v1/txn/sign
+POST https://cloudwallet-solana.onrender.com/api/v1/txn/sign
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDZmZTNhNjEzODdhZTk3N2Q4OWJjYyIsImlhdCI6MTc0OTQ4MzA3Nn0.3HhnhvPdGohQEJL339gRTzga1wHqFHduPDQDL6d9Idg
+Authorization: Bearer <YOUR_JWT_TOKEN_HERE>
 
 {
   "toAddress": "HoomsS5YfyNP2icfW44zh84VqT8v6AWHS8amurMJBXcE",

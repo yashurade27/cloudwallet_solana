@@ -23,7 +23,7 @@ const SignUp = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/api/v1/signup", {
+      const res = await axios.post("https://cloudwallet-solana.onrender.com/signup", {
         username: usernameValue,
         password: passwordValue,
         email: emailValue,

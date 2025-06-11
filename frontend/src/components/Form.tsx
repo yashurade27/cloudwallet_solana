@@ -46,7 +46,7 @@ const SendMoneyForm = (): any => {
             return;
         }
         try {
-            await axios.post("http://localhost:3000/api/v1/txn/sign", {
+            await axios.post("https://cloudwallet-solana.onrender.com/api/v1/txn/sign", {
                 toAddress: toAddressValue,
                 amount: toAmtValue
             }, {

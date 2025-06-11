@@ -7,7 +7,7 @@ const { sendTxn } = require('./utils');
 const cors = require('cors');
 const corsOptions = {
     origin: ['http://localhost:5173',
-        'https://cloudwallet_solana.netlify.app',
+        'https://cloudwallet-solana.netlify.app'
     ],
     methods: 'GET,POST', 
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],

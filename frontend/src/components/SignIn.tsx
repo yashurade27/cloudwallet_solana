@@ -21,7 +21,7 @@ const SignIn = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/api/v1/signin", {
+      const res = await axios.post("https://cloudwallet-solana.onrender.com/signin", {
         username: usernameValue,
         password: passwordValue,
       });
